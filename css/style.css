@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// body {
+//     overflow-x: hidden;
+// }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: blue !important;
+}
+::-webkit-scrollbar-track {
+    background: white !important;
+}
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.page-hamburger {
+    right: -100%;
+    top: 80%;
+}
+
+.open-hamburger {
+    right: 3%;
+}
+
+.scrolling-section {
+    // position: relative;
+    overflow: hidden;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.scrolling-content {
+    box-shadow: 3px 10px 15px -3px rgba(0, 0, 0, 0.1), 3px 4px 15px -2px rgba(0, 0, 0, 0.05);
+    animation: scroll infinite 8s linear;
+}
+
+.scrolling-image {
+    animation: scroll2 infinite 8s linear;
+}
+
+.shadow-costum {
+    box-shadow: 3px 10px 15px -3px rgba(0, 0, 0, 0.1), 3px 4px 15px -2px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+.scrolling-section:hover .scrolling-content {
+    animation-play-state: paused;
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}

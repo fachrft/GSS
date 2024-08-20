@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <title>Gerakan Sekolah Sehat</title>
+    </head>
+    <body class="bg-[#F3F3FD]">
+        <!------------------------ NAVBAR  ------------------------------->
+        <nav class="bg-transparent w-full z-50 fixed">
+            <div class="flex justify-between relative px-5 lg:px-32">
+                <div class="flex justify-center items-center py-2">
+                    <img class="w-[100px] lg:w-[120px]" src="img/logo.svg" alt="" />
+                </div>
+                <div class="flex flex-col gap-1 items-center justify-center py-2 lg:hidden" id="hamburger">
+                    <span class="w-5 h-[2.5px] bg-black"></span>
+                    <span class="w-5 h-[2.5px] bg-black"></span>
+                    <span class="w-5 h-[2.5px] bg-black"></span>
+                </div>
+                <div class="page-hamburger absolute bg-white w-[200px] rounded-xl transition-all duration-700 lg:static lg:w-auto lg:h-20 lg:flex lg:bg-transparent" id="page-hamburger">
+                    <div class="p-8">
+                        <div class="flex flex-col lg:flex-row lg:gap-5 lg:justify-center lg:items-center">
+                            <div class="flex flex-col gap-2 lg:flex-row lg:gap-8 lg:justify-center lg:items-center font-semibold lg:text-xl">
+                                <a href="" class="relative group">
+                                    Home
+                                    <span class="absolute left-0 bottom-0 w-[50%] lg:w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+                                </a>
+                                <a href="" class="relative group">
+                                    Edukasi
+                                    <span class="absolute left-0 bottom-0 w-[50%] lg:w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+                                </a>
+                                <a href="" class="relative group">
+                                    Our Team
+                                    <span class="absolute left-0 bottom-0 w-[50%] lg:w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!------------------------ NAVBAR SELESAI  ------------------------------->
+
+        <!-------------------------- HOME  ---------------------------------->
+        <main class="overflow-hidden pt-32 lg:pt-20">
+            <section class="relative">
+                <div class="absolute flex justify-center items-center top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-56 md:left-[30%]">
+                    <div class="-z-10 relative left-[18%] w-[500px] h-[500px] bg-[#2A72DD] rounded-full blur-3xl opacity-30 md:h-[300px]"></div>
+                    <div class="-z-10 relative left-0 top-[200px] w-[400px] h-[400px] bg-[#4461F2] rounded-full blur-3xl opacity-30 md:left-96 md:top-16"></div>
+                </div>
+            </section>
+            <section class="relative -top-14 px-11 w-screen h-screen md:px-36 md:top-6 flex flex-col-reverse md:flex-row md:items-center md:justify-between">
+                <div class="md:flex-1 md:mb-36" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="font-bold text-2xl py-2 md:font-semibold md:text-[80px] md:py-[30px] md:leading-[80px]">Gerakan Sekolah Sehat</h1>
+                    <p class="text-[#8A8585] tracking-[0.05px] w-[265px] text-[15px] leading-[25px] md:text-[15px] md:w-[650px] md:leading-[24px] lg:text-xl">
+                        Segala upaya untuk menciptakan kondisi sekolah yang dapat mendukung tumbuh kembang peserta didik secara optimal, membentuk perilaku hidup bersih dan sehat. Sesuai dengan Visi Indonesia Emas 2045 berfokus pada Sehat Bergizi,
+                        Sehat Fisik, Sehat Imunisasi, Sehat Jiwa, dan Sehat Lingkungan.
+                    </p>
+                    <button
+                        class="flex items-center justify-center gap-3 border-2 my-8 py-[12px] px-[36px] rounded-[40px] bg-opacity-25 transition duration-700 ease-in-out transform hover:scale-105 hover:bg-opacity-50 hover:border-green-500 hover:shadow-lg"
+                    >
+                        Learn More
+                        <svg class="transition duration-300 ease-in-out transform hover:rotate-90" width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#00CF5F" />
+                            <path d="M17.1431 8L25.1431 16L17.1431 24M6.85742 16H25.1431H6.85742Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="md:flex md:justify-end md:items-end" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./img/sekolah.svg" alt="Sekolah" class="py-5 w-full h-auto md:mb-32 md:w-[825px]" />
+                </div>
+            </section>
+        </main>
+        <!-------------------------- HOME SELESAI ---------------------------------->
+
+        <!------------------------ 5 PILAR KESEHATAN  ------------------------------->
+        <section class="mb-28">
+            <div class="text-center font-semibold text-2xl hidden lg:block">
+                <h1>FOKUS 5 PILAR KESEHATAN</h1>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="scrolling-section py-8 flex items-center gap-4" id="scroll-section">
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-jiwa.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Jiwa</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Menciptakan Lingkungan sekolah dengan kualitas kesehatan mental dan emosional warga sekolah yang baik. Dengan Jiwa yang sehat dapat meningkatkan bagaimana cara kita sersosialisasi dengan orang lain dengan ramah,
+                                minimnya terjadi stigma / intimidasi pada seseorang, dan tau cara berteman dengan baik.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-jiwa.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-bergizi.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Bergizi</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Sebuah pangan dikatakan Gizi seimbang apabila asupan makan cukup secara kuantitas, kualitas dan mengandung berbagai zat gizi yang dibutuhkan tubuh. Tujuannya agar kesehatan tubuh terjaga, pertumbuhan sempurna pada
+                                anak-anak, zat gizi tersimpan, dan aktifitas sehari-hari berjalan optimal.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-bergizi.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-fisik.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Fisik</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Dengan gizi yang cukup, Kesehatan fisik juga harus diperhatikan karna selain meingkatkan kebugaran dapat meingkatkan Konsentrasi dalam aktivitas keseharian dan juga menigkatkan keperceayaan diri dengan berat badan yang
+                                ideal. Sistem Imun tubuhpun akan meningkat secara signifikan dengan pola hidup yang sehat.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-fisik.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-imunisasi.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Imunisasi</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Pentingnya imunisasi untuk memastikan bahwa seluruh peserta didik memperoleh perlindungan yang optimal terhadap berbagai penyakit menular dan menciptakan lingkungan sekolah yang sehat. Pembekalan pengetahuan Manfaat
+                                imunisasi bagi anak-anak tidak kalah pentingnya
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-imunisasi.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-lingkungan.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Lingkungan</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Tidak hanya kesehatan individu yang perlu di perhatikan namun lingkungan sekitar juga harus menjadi sorotan bagi kita semua, adanya lingkungan yang bersih dapat meningkatkan kenyamanan saat belajar dan meningkatkan
+                                kualitas hidup sehat dengan minimnya pencemaran lingkungan.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-lingkungan.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-jiwa.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Jiwa</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Menciptakan Lingkungan sekolah dengan kualitas kesehatan mental dan emosional warga sekolah yang baik. Dengan Jiwa yang sehat dapat meningkatkan bagaimana cara kita sersosialisasi dengan orang lain dengan ramah,
+                                minimnya terjadi stigma / intimidasi pada seseorang, dan tau cara berteman dengan baik.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-jiwa.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-bergizi.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Bergizi</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Sebuah pangan dikatakan Gizi seimbang apabila asupan makan cukup secara kuantitas, kualitas dan mengandung berbagai zat gizi yang dibutuhkan tubuh. Tujuannya agar kesehatan tubuh terjaga, pertumbuhan sempurna pada
+                                anak-anak, zat gizi tersimpan, dan aktifitas sehari-hari berjalan optimal.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-bergizi.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-fisik.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Fisik</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Dengan gizi yang cukup, Kesehatan fisik juga harus diperhatikan karna selain meingkatkan kebugaran dapat meingkatkan Konsentrasi dalam aktivitas keseharian dan juga menigkatkan keperceayaan diri dengan berat badan yang
+                                ideal. Sistem Imun tubuhpun akan meningkat secara signifikan dengan pola hidup yang sehat.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scrolling-content w-[346px] rounded-2xl flex flex-col gap-3 px-8 py-10">
+                        <div>
+                            <div class="">
+                                <img src="img/sehat-imunisasi.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold">
+                            <h1>Sehat Imunisasi</h1>
+                        </div>
+                        <div class="text-[#6C87AE] text-sm mb-8">
+                            <p>
+                                Pentingnya imunisasi untuk memastikan bahwa seluruh peserta didik memperoleh perlindungan yang optimal terhadap berbagai penyakit menular dan menciptakan lingkungan sekolah yang sehat. Pembekalan pengetahuan Manfaat
+                                imunisasi bagi anak-anak tidak kalah pentingnya
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <a href="./sehat-imunisasi.html">
+                                <div
+                                    class="w-[220px] h-[45px] bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] flex justify-center items-center rounded-full text-white font-semibold text-[18px] transition-all duration-700 hover:bg-gradient-to-r hover:from-[#03ACF2] hover:to-[#C8E6C9]"
+                                >
+                                    <p>Selengkapnya</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ 5 PILAR KESEHATAN SELESAI  ------------------------------->
+
+        <!------------------------------- KEGIATAN GERAKAN SEKOLAH SEHAT  ----------------------------------------->
+        <section class="mb-28">
+            <div class="flex justify-center items-center" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="text-white bg-gradient-to-br from-[#03ACF2] to-[#C8E6C9] rounded-[16px] px-10 py-6 md:px-52 md:y-20 md:text-4xl">Kegiatan Gerakan Sekolah Sehat</h1>
+            </div>
+            <div class="flex gap-5 py-12 px-11 md:justify-center md:items-center lg:px-28 lg:w-[1115px] lg:mx-64">
+                <div class="h-[254px] w-[189px] lg:w-[325px] lg:h-[404px]" data-aos="fade-up-right" data-aos-duration="1000">
+                    <img src="./img/duduk.svg" alt="" class="md:w-[414px]" />
+                </div>
+                <div class="flex-1 h-[254px] w-[189px] py-5 md:flex flex-col" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="md:mt-14">
+                        <h1 class="font-semibold text-[16px] mb-[6px] md:text-[20px] lg:text-3xl">Manfaat Gerakan Sekolah Sehat</h1>
+                        <p class="text-[12px] w-[160px] sm:text-shadow-lg text-[#6C87AE] md:text-[16px] md:w-[420px] md:leading-[20px] lg:text-xl">
+                            Pembudayaan dan pembentukan generasi emas yang lebih sehat, berkualitas dan berpendidikan. Dengan Memperhatikan 5 Pilar Kesehatan dapat meningkatkan produktifitas peserta didik dalam mengikuti proses pembelajaran.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------- KEGIATAN GERAKAN SEKOLAH SEHAT SELESAI ----------------------------------------->
+
+        <!------------------------ KEGIATAN SEKOLAH SEHAT  ------------------------------->
+        <section class="mb-28">
+            <div class="">
+                <div class="scrolling-section py-8 flex gap-4" id="scroll-section">
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-imunisasi.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Imunisasi</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-gizi.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Gizi</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-jiwa.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Jiwa</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-fisik.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Fisik</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-lingkungan.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Lingkungan</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-imunisasi.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Imunisasi</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-gizi.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Gizi</h1>
+                        </div>
+                    </div>
+                    <div class="scrolling-image flex flex-col">
+                        <div class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]">
+                            <img class="w-[169px] h-[230px] lg:w-[269px] lg:h-[330px]" src="img/image-sehat-jiwa.svg" alt="" />
+                        </div>
+                        <div class="font-semibold text-center lg:text-2xl lg:mt-5">
+                            <h1>Sehat Jiwa</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ KEGIATAN SEKOLAH SEHAT SELESAI  ------------------------------->
+
+        <!------------------------- OUR TEAM -------------------------------------->
+        <section>
+            <h1 class="font-bold text-center text-[20px] lg:text-3xl">Our Team</h1>
+            <!-- Card 1 -->
+            <div class="w-full overflow-x-auto no-scrollbar">
+                <div class="flex space-x-4 p-6 md:justify-center md:items-center">
+                    <!-- Card 1 -->
+                    <div class="min-w-[200px] bg-white shadow-lg rounded-[24px] md:w-[324px] md:h-[380px]" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="">
+                            <img class="m-auto bg-opacity-20 bg-[#855FCE] mt-12 w-[148px] h-[148px] rounded-full" src="img/nanda.jpg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center items-center py-4">
+                            <div class="flex justify-center items-center flex-col">
+                                <h3 class="font-bold text-xl md:w-36 text-center">Ananda Aulia Damayanti</h3>
+                                <h4 class="text-[#6C87AE] text-[15px]">UI/UX DESIGN</h4>
+                            </div>
+                            <div class="m-5 flex gap-2 px-5 py-2 rounded-[24px] bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-transparent">
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0598 0.246826C7.68532 0.246925 5.3883 1.09194 3.57981 2.63067C1.77131 4.16941 0.569343 6.30145 0.188975 8.64531C-0.191393 10.9892 0.27466 13.3919 1.50374 15.4236C2.73282 17.4553 4.64473 18.9833 6.89736 19.7343C7.39736 19.8218 7.58486 19.5218 7.58486 19.2593C7.58486 19.0218 7.57235 18.2343 7.57235 17.3968C5.05984 17.8593 4.40984 16.7844 4.20984 16.2219C3.98792 15.6748 3.63612 15.19 3.18484 14.8093C2.83484 14.6218 2.33484 14.1593 3.17233 14.1468C3.49212 14.1815 3.79883 14.2928 4.06647 14.4712C4.33412 14.6497 4.55481 14.89 4.70984 15.1718C4.84661 15.4175 5.03052 15.6338 5.25103 15.8083C5.47154 15.9828 5.72432 16.1121 5.99487 16.1887C6.26543 16.2654 6.54845 16.2879 6.82772 16.2549C7.10699 16.222 7.37701 16.1343 7.62232 15.9968C7.66561 15.4884 7.89218 15.0131 8.25984 14.6594C6.03484 14.4094 3.70984 13.5468 3.70984 9.72186C3.69579 8.728 4.06253 7.76643 4.73484 7.03436C4.42912 6.17058 4.46489 5.22264 4.83484 4.38436C4.83484 4.38436 5.67231 4.12185 7.58484 5.40936C9.22113 4.95933 10.9486 4.95933 12.5848 5.40936C14.4973 4.10936 15.3348 4.38436 15.3348 4.38436C15.7048 5.22263 15.7406 6.17058 15.4348 7.03436C16.1092 7.76518 16.4762 8.72759 16.4598 9.72186C16.4598 13.5593 14.1223 14.4094 11.8973 14.6594C12.136 14.9012 12.3198 15.1917 12.4363 15.5109C12.5527 15.8301 12.5991 16.1706 12.5723 16.5094C12.5723 17.8469 12.5598 18.9218 12.5598 19.2594C12.5598 19.5219 12.7473 19.8344 13.2473 19.7344C15.496 18.9772 17.4024 17.4456 18.6263 15.4129C19.8501 13.3802 20.3117 10.9787 19.9287 8.63706C19.5457 6.29547 18.343 4.1662 16.5353 2.62934C14.7276 1.09248 12.4326 0.248061 10.0598 0.246826Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0601 5.00012C9.07115 5.00012 8.10445 5.29337 7.28221 5.84277C6.45996 6.39218 5.8191 7.17307 5.44066 8.08671C5.06222 9.00034 4.96321 10.0057 5.15613 10.9756C5.34906 11.9455 5.82526 12.8364 6.52452 13.5357C7.22379 14.2349 8.1147 14.7111 9.08461 14.904C10.0545 15.097 11.0598 14.998 11.9735 14.6195C12.8871 14.2411 13.668 13.6002 14.2174 12.778C14.7668 11.9557 15.0601 10.989 15.0601 10.0001C15.0601 8.67404 14.5333 7.40227 13.5956 6.46459C12.6579 5.52691 11.3861 5.00012 10.0601 5.00012ZM10.0601 13.0001C9.46671 13.0001 8.88669 12.8242 8.39335 12.4945C7.9 12.1649 7.51548 11.6964 7.28842 11.1482C7.06136 10.6 7.00195 9.99679 7.1177 9.41485C7.23346 8.83291 7.51918 8.29836 7.93874 7.8788C8.3583 7.45924 8.89285 7.17352 9.47479 7.05777C10.0567 6.94201 10.6599 7.00142 11.2081 7.22848C11.7563 7.45555 12.2248 7.84006 12.5545 8.33341C12.8841 8.82676 13.0601 9.40678 13.0601 10.0001C13.0601 10.7958 12.744 11.5588 12.1814 12.1214C11.6188 12.6841 10.8557 13.0001 10.0601 13.0001ZM15.0601 4.00012C14.8623 4.00012 14.6689 4.05877 14.5045 4.16865C14.34 4.27853 14.2119 4.43471 14.1362 4.61744C14.0605 4.80016 14.0407 5.00123 14.0793 5.19521C14.1179 5.38919 14.2131 5.56738 14.353 5.70723C14.4928 5.84708 14.671 5.94232 14.865 5.98091C15.0589 6.01949 15.26 5.99969 15.4427 5.924C15.6255 5.84831 15.7816 5.72014 15.8915 5.55569C16.0014 5.39124 16.0601 5.1979 16.0601 5.00012C16.0601 4.73491 15.9547 4.48055 15.7672 4.29302C15.5796 4.10548 15.3253 4.00012 15.0601 4.00012ZM20.0001 6.24012C19.9835 5.38555 19.8212 4.54007 19.5201 3.74012C19.2408 3.01219 18.8117 2.35111 18.2604 1.79982C17.7091 1.24853 17.048 0.819338 16.3201 0.540122C15.5201 0.239021 14.6746 0.0766897 13.8201 0.060122C12.8501 0.000122014 12.5301 0.00012207 10.0601 0.00012207C7.59006 0.00012207 7.27006 0.000122014 6.30006 0.060122C5.44548 0.0766897 4.6 0.239021 3.80006 0.540122C3.07212 0.819338 2.41105 1.24853 1.85976 1.79982C1.30846 2.35111 0.879275 3.01219 0.600059 3.74012C0.298958 4.54007 0.136626 5.38555 0.120059 6.24012C0.0600585 7.22012 0.0600586 7.54012 0.0600586 10.0001C0.0600586 12.4601 0.0600585 12.7801 0.120059 13.7601C0.136626 14.6147 0.298958 15.4602 0.600059 16.2601C0.879275 16.9881 1.30846 17.6491 1.85976 18.2004C2.41105 18.7517 3.07212 19.1809 3.80006 19.4601C4.6 19.7612 5.44548 19.9236 6.30006 19.9401C7.30006 19.9401 7.59006 20.0001 10.0601 20.0001C12.5301 20.0001 12.8501 20.0001 13.8201 19.9401C14.6746 19.9236 15.5201 19.7612 16.3201 19.4601C17.048 19.1809 17.7091 18.7517 18.2604 18.2004C18.8117 17.6491 19.2408 16.9881 19.5201 16.2601C19.8212 15.4602 19.9835 14.6147 20.0001 13.7601C20.0001 12.7601 20.0601 12.4601 20.0601 10.0001C20.0601 7.54012 20.0601 7.22012 20.0001 6.24012ZM18.0001 13.6701C17.9825 14.3047 17.8644 14.9325 17.6501 15.5301C17.4728 16.0025 17.1927 16.4295 16.8301 16.7801C16.4815 17.143 16.0537 17.4202 15.5801 17.5901C14.9811 17.8132 14.3491 17.9349 13.7101 17.9501C12.7701 17.9501 12.4801 18.0001 10.0501 18.0001C7.62006 18.0001 7.34006 18.0001 6.40006 18.0001C5.76208 17.9837 5.13081 17.8655 4.53006 17.6501C4.05772 17.4729 3.63073 17.1928 3.28006 16.8301C2.91721 16.4815 2.63998 16.0537 2.47006 15.5801C2.24786 14.9843 2.12621 14.3558 2.11006 13.7201C2.11006 12.7201 2.11006 12.4701 2.11006 10.0501C2.11006 7.63012 2.11006 7.34012 2.11006 6.38012C2.1273 5.74133 2.2489 5.10966 2.47006 4.51012C2.64262 4.04075 2.91959 3.61674 3.28006 3.27012C3.62863 2.90728 4.05647 2.63004 4.53006 2.46012C5.12905 2.23702 5.76105 2.11535 6.40006 2.10012C7.34006 2.00012 7.63006 2.00012 10.0601 2.00012C12.4901 2.00012 12.7801 2.00012 13.7201 2.00012C14.3622 2.01645 14.9973 2.13807 15.6001 2.36012C16.0694 2.53268 16.4934 2.80965 16.8401 3.17012C17.2029 3.5187 17.4801 3.94653 17.6501 4.42012C17.8949 5.02869 18.0335 5.67471 18.0601 6.33012C18.0601 7.33012 18.1101 7.58012 18.1101 10.0001C18.1101 12.4201 18.0601 12.7101 18.0601 13.6701H18.0001Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.4701 0.000139831H1.53006C1.33964 -0.00250479 1.15056 0.0323873 0.973624 0.102824C0.796689 0.17326 0.635362 0.27786 0.498856 0.410652C0.36235 0.543443 0.25334 0.701824 0.178051 0.876749C0.102761 1.05167 0.062667 1.23972 0.0600586 1.43014V18.5701C0.062667 18.7606 0.102761 18.9486 0.178051 19.1235C0.25334 19.2985 0.36235 19.4568 0.498856 19.5896C0.635362 19.7224 0.796689 19.827 0.973624 19.8975C1.15056 19.9679 1.33964 20.0028 1.53006 20.0001H18.4701C18.6605 20.0028 18.8496 19.9679 19.0265 19.8975C19.2034 19.827 19.3648 19.7224 19.5013 19.5896C19.6378 19.4568 19.7468 19.2985 19.8221 19.1235C19.8974 18.9486 19.9375 18.7606 19.9401 18.5701V1.43014C19.9375 1.23972 19.8974 1.05167 19.8221 0.876749C19.7468 0.701824 19.6378 0.543443 19.5013 0.410652C19.3648 0.27786 19.2034 0.17326 19.0265 0.102824C18.8496 0.0323873 18.6605 -0.00250479 18.4701 0.000139831ZM6.09006 16.7401H3.09006V7.74014H6.09006V16.7401ZM4.59006 6.48014C4.17632 6.48014 3.77953 6.31578 3.48697 6.02323C3.19442 5.73067 3.03006 5.33388 3.03006 4.92014C3.03006 4.5064 3.19442 4.10961 3.48697 3.81705C3.77953 3.5245 4.17632 3.36014 4.59006 3.36014C4.80975 3.33522 5.03224 3.35699 5.24293 3.42402C5.45363 3.49105 5.6478 3.60183 5.81272 3.7491C5.97763 3.89637 6.10958 4.07682 6.19993 4.27862C6.29028 4.48043 6.33698 4.69904 6.33698 4.92014C6.33698 5.14124 6.29028 5.35985 6.19993 5.56166C6.10958 5.76346 5.97763 5.94391 5.81272 6.09118C5.6478 6.23845 5.45363 6.34923 5.24293 6.41626C5.03224 6.48329 4.80975 6.50505 4.59006 6.48014ZM16.9101 16.7401H13.9101V11.9101C13.9101 10.7001 13.4801 9.91014 12.3901 9.91014C12.0527 9.91261 11.7242 10.0184 11.4489 10.2133C11.1735 10.4082 10.9645 10.6828 10.8501 11.0001C10.7718 11.2352 10.7379 11.4827 10.7501 11.7301V16.7301H7.75006C7.75006 16.7301 7.75006 8.55014 7.75006 7.73014H10.7501V9.00014C11.0226 8.52725 11.419 8.13766 11.8965 7.87334C12.374 7.60902 12.9146 7.47999 13.4601 7.50014C15.4601 7.50014 16.9101 8.79014 16.9101 11.5601V16.7401Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="min-w-[200px] bg-white shadow-lg rounded-[24px] md:w-[324px] md:h-[380px]" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="">
+                            <img class="m-auto bg-opacity-20 bg-[#855FCE] mt-12 w-[148px] h-[148px] rounded-full" src="img/habibi.jpg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center items-center py-4">
+                            <div class="flex justify-center items-center flex-col">
+                                <h3 class="font-bold text-xl md:w-36 text-center">Habibi Widayanto</h3>
+                                <h4 class="text-[#6C87AE] text-[15px]">WEB DEVELOPER</h4>
+                            </div>
+                            <div class="m-5 flex gap-2 px-5 py-2 rounded-[24px] bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-transparent">
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0598 0.246826C7.68532 0.246925 5.3883 1.09194 3.57981 2.63067C1.77131 4.16941 0.569343 6.30145 0.188975 8.64531C-0.191393 10.9892 0.27466 13.3919 1.50374 15.4236C2.73282 17.4553 4.64473 18.9833 6.89736 19.7343C7.39736 19.8218 7.58486 19.5218 7.58486 19.2593C7.58486 19.0218 7.57235 18.2343 7.57235 17.3968C5.05984 17.8593 4.40984 16.7844 4.20984 16.2219C3.98792 15.6748 3.63612 15.19 3.18484 14.8093C2.83484 14.6218 2.33484 14.1593 3.17233 14.1468C3.49212 14.1815 3.79883 14.2928 4.06647 14.4712C4.33412 14.6497 4.55481 14.89 4.70984 15.1718C4.84661 15.4175 5.03052 15.6338 5.25103 15.8083C5.47154 15.9828 5.72432 16.1121 5.99487 16.1887C6.26543 16.2654 6.54845 16.2879 6.82772 16.2549C7.10699 16.222 7.37701 16.1343 7.62232 15.9968C7.66561 15.4884 7.89218 15.0131 8.25984 14.6594C6.03484 14.4094 3.70984 13.5468 3.70984 9.72186C3.69579 8.728 4.06253 7.76643 4.73484 7.03436C4.42912 6.17058 4.46489 5.22264 4.83484 4.38436C4.83484 4.38436 5.67231 4.12185 7.58484 5.40936C9.22113 4.95933 10.9486 4.95933 12.5848 5.40936C14.4973 4.10936 15.3348 4.38436 15.3348 4.38436C15.7048 5.22263 15.7406 6.17058 15.4348 7.03436C16.1092 7.76518 16.4762 8.72759 16.4598 9.72186C16.4598 13.5593 14.1223 14.4094 11.8973 14.6594C12.136 14.9012 12.3198 15.1917 12.4363 15.5109C12.5527 15.8301 12.5991 16.1706 12.5723 16.5094C12.5723 17.8469 12.5598 18.9218 12.5598 19.2594C12.5598 19.5219 12.7473 19.8344 13.2473 19.7344C15.496 18.9772 17.4024 17.4456 18.6263 15.4129C19.8501 13.3802 20.3117 10.9787 19.9287 8.63706C19.5457 6.29547 18.343 4.1662 16.5353 2.62934C14.7276 1.09248 12.4326 0.248061 10.0598 0.246826Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0601 5.00012C9.07115 5.00012 8.10445 5.29337 7.28221 5.84277C6.45996 6.39218 5.8191 7.17307 5.44066 8.08671C5.06222 9.00034 4.96321 10.0057 5.15613 10.9756C5.34906 11.9455 5.82526 12.8364 6.52452 13.5357C7.22379 14.2349 8.1147 14.7111 9.08461 14.904C10.0545 15.097 11.0598 14.998 11.9735 14.6195C12.8871 14.2411 13.668 13.6002 14.2174 12.778C14.7668 11.9557 15.0601 10.989 15.0601 10.0001C15.0601 8.67404 14.5333 7.40227 13.5956 6.46459C12.6579 5.52691 11.3861 5.00012 10.0601 5.00012ZM10.0601 13.0001C9.46671 13.0001 8.88669 12.8242 8.39335 12.4945C7.9 12.1649 7.51548 11.6964 7.28842 11.1482C7.06136 10.6 7.00195 9.99679 7.1177 9.41485C7.23346 8.83291 7.51918 8.29836 7.93874 7.8788C8.3583 7.45924 8.89285 7.17352 9.47479 7.05777C10.0567 6.94201 10.6599 7.00142 11.2081 7.22848C11.7563 7.45555 12.2248 7.84006 12.5545 8.33341C12.8841 8.82676 13.0601 9.40678 13.0601 10.0001C13.0601 10.7958 12.744 11.5588 12.1814 12.1214C11.6188 12.6841 10.8557 13.0001 10.0601 13.0001ZM15.0601 4.00012C14.8623 4.00012 14.6689 4.05877 14.5045 4.16865C14.34 4.27853 14.2119 4.43471 14.1362 4.61744C14.0605 4.80016 14.0407 5.00123 14.0793 5.19521C14.1179 5.38919 14.2131 5.56738 14.353 5.70723C14.4928 5.84708 14.671 5.94232 14.865 5.98091C15.0589 6.01949 15.26 5.99969 15.4427 5.924C15.6255 5.84831 15.7816 5.72014 15.8915 5.55569C16.0014 5.39124 16.0601 5.1979 16.0601 5.00012C16.0601 4.73491 15.9547 4.48055 15.7672 4.29302C15.5796 4.10548 15.3253 4.00012 15.0601 4.00012ZM20.0001 6.24012C19.9835 5.38555 19.8212 4.54007 19.5201 3.74012C19.2408 3.01219 18.8117 2.35111 18.2604 1.79982C17.7091 1.24853 17.048 0.819338 16.3201 0.540122C15.5201 0.239021 14.6746 0.0766897 13.8201 0.060122C12.8501 0.000122014 12.5301 0.00012207 10.0601 0.00012207C7.59006 0.00012207 7.27006 0.000122014 6.30006 0.060122C5.44548 0.0766897 4.6 0.239021 3.80006 0.540122C3.07212 0.819338 2.41105 1.24853 1.85976 1.79982C1.30846 2.35111 0.879275 3.01219 0.600059 3.74012C0.298958 4.54007 0.136626 5.38555 0.120059 6.24012C0.0600585 7.22012 0.0600586 7.54012 0.0600586 10.0001C0.0600586 12.4601 0.0600585 12.7801 0.120059 13.7601C0.136626 14.6147 0.298958 15.4602 0.600059 16.2601C0.879275 16.9881 1.30846 17.6491 1.85976 18.2004C2.41105 18.7517 3.07212 19.1809 3.80006 19.4601C4.6 19.7612 5.44548 19.9236 6.30006 19.9401C7.30006 19.9401 7.59006 20.0001 10.0601 20.0001C12.5301 20.0001 12.8501 20.0001 13.8201 19.9401C14.6746 19.9236 15.5201 19.7612 16.3201 19.4601C17.048 19.1809 17.7091 18.7517 18.2604 18.2004C18.8117 17.6491 19.2408 16.9881 19.5201 16.2601C19.8212 15.4602 19.9835 14.6147 20.0001 13.7601C20.0001 12.7601 20.0601 12.4601 20.0601 10.0001C20.0601 7.54012 20.0601 7.22012 20.0001 6.24012ZM18.0001 13.6701C17.9825 14.3047 17.8644 14.9325 17.6501 15.5301C17.4728 16.0025 17.1927 16.4295 16.8301 16.7801C16.4815 17.143 16.0537 17.4202 15.5801 17.5901C14.9811 17.8132 14.3491 17.9349 13.7101 17.9501C12.7701 17.9501 12.4801 18.0001 10.0501 18.0001C7.62006 18.0001 7.34006 18.0001 6.40006 18.0001C5.76208 17.9837 5.13081 17.8655 4.53006 17.6501C4.05772 17.4729 3.63073 17.1928 3.28006 16.8301C2.91721 16.4815 2.63998 16.0537 2.47006 15.5801C2.24786 14.9843 2.12621 14.3558 2.11006 13.7201C2.11006 12.7201 2.11006 12.4701 2.11006 10.0501C2.11006 7.63012 2.11006 7.34012 2.11006 6.38012C2.1273 5.74133 2.2489 5.10966 2.47006 4.51012C2.64262 4.04075 2.91959 3.61674 3.28006 3.27012C3.62863 2.90728 4.05647 2.63004 4.53006 2.46012C5.12905 2.23702 5.76105 2.11535 6.40006 2.10012C7.34006 2.00012 7.63006 2.00012 10.0601 2.00012C12.4901 2.00012 12.7801 2.00012 13.7201 2.00012C14.3622 2.01645 14.9973 2.13807 15.6001 2.36012C16.0694 2.53268 16.4934 2.80965 16.8401 3.17012C17.2029 3.5187 17.4801 3.94653 17.6501 4.42012C17.8949 5.02869 18.0335 5.67471 18.0601 6.33012C18.0601 7.33012 18.1101 7.58012 18.1101 10.0001C18.1101 12.4201 18.0601 12.7101 18.0601 13.6701H18.0001Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.4701 0.000139831H1.53006C1.33964 -0.00250479 1.15056 0.0323873 0.973624 0.102824C0.796689 0.17326 0.635362 0.27786 0.498856 0.410652C0.36235 0.543443 0.25334 0.701824 0.178051 0.876749C0.102761 1.05167 0.062667 1.23972 0.0600586 1.43014V18.5701C0.062667 18.7606 0.102761 18.9486 0.178051 19.1235C0.25334 19.2985 0.36235 19.4568 0.498856 19.5896C0.635362 19.7224 0.796689 19.827 0.973624 19.8975C1.15056 19.9679 1.33964 20.0028 1.53006 20.0001H18.4701C18.6605 20.0028 18.8496 19.9679 19.0265 19.8975C19.2034 19.827 19.3648 19.7224 19.5013 19.5896C19.6378 19.4568 19.7468 19.2985 19.8221 19.1235C19.8974 18.9486 19.9375 18.7606 19.9401 18.5701V1.43014C19.9375 1.23972 19.8974 1.05167 19.8221 0.876749C19.7468 0.701824 19.6378 0.543443 19.5013 0.410652C19.3648 0.27786 19.2034 0.17326 19.0265 0.102824C18.8496 0.0323873 18.6605 -0.00250479 18.4701 0.000139831ZM6.09006 16.7401H3.09006V7.74014H6.09006V16.7401ZM4.59006 6.48014C4.17632 6.48014 3.77953 6.31578 3.48697 6.02323C3.19442 5.73067 3.03006 5.33388 3.03006 4.92014C3.03006 4.5064 3.19442 4.10961 3.48697 3.81705C3.77953 3.5245 4.17632 3.36014 4.59006 3.36014C4.80975 3.33522 5.03224 3.35699 5.24293 3.42402C5.45363 3.49105 5.6478 3.60183 5.81272 3.7491C5.97763 3.89637 6.10958 4.07682 6.19993 4.27862C6.29028 4.48043 6.33698 4.69904 6.33698 4.92014C6.33698 5.14124 6.29028 5.35985 6.19993 5.56166C6.10958 5.76346 5.97763 5.94391 5.81272 6.09118C5.6478 6.23845 5.45363 6.34923 5.24293 6.41626C5.03224 6.48329 4.80975 6.50505 4.59006 6.48014ZM16.9101 16.7401H13.9101V11.9101C13.9101 10.7001 13.4801 9.91014 12.3901 9.91014C12.0527 9.91261 11.7242 10.0184 11.4489 10.2133C11.1735 10.4082 10.9645 10.6828 10.8501 11.0001C10.7718 11.2352 10.7379 11.4827 10.7501 11.7301V16.7301H7.75006C7.75006 16.7301 7.75006 8.55014 7.75006 7.73014H10.7501V9.00014C11.0226 8.52725 11.419 8.13766 11.8965 7.87334C12.374 7.60902 12.9146 7.47999 13.4601 7.50014C15.4601 7.50014 16.9101 8.79014 16.9101 11.5601V16.7401Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="min-w-[200px] bg-white shadow-lg rounded-[24px] md:w-[324px] md:h-[380px]" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="">
+                            <img class="m-auto bg-opacity-20 bg-[#855FCE] mt-12 w-[148px] h-[148px] rounded-full" src="img/geru.jpg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center items-center py-4">
+                            <div class="flex justify-center items-center flex-col">
+                                <h3 class="font-bold text-xl md:w-36 text-center">Shugeru Marcelo Wirya</h3>
+                                <h4 class="text-[#6C87AE] text-[15px]">UI/UX WRITER</h4>
+                            </div>
+                            <div class="m-5 flex gap-2 px-5 py-2 rounded-[24px] bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-transparent">
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0598 0.246826C7.68532 0.246925 5.3883 1.09194 3.57981 2.63067C1.77131 4.16941 0.569343 6.30145 0.188975 8.64531C-0.191393 10.9892 0.27466 13.3919 1.50374 15.4236C2.73282 17.4553 4.64473 18.9833 6.89736 19.7343C7.39736 19.8218 7.58486 19.5218 7.58486 19.2593C7.58486 19.0218 7.57235 18.2343 7.57235 17.3968C5.05984 17.8593 4.40984 16.7844 4.20984 16.2219C3.98792 15.6748 3.63612 15.19 3.18484 14.8093C2.83484 14.6218 2.33484 14.1593 3.17233 14.1468C3.49212 14.1815 3.79883 14.2928 4.06647 14.4712C4.33412 14.6497 4.55481 14.89 4.70984 15.1718C4.84661 15.4175 5.03052 15.6338 5.25103 15.8083C5.47154 15.9828 5.72432 16.1121 5.99487 16.1887C6.26543 16.2654 6.54845 16.2879 6.82772 16.2549C7.10699 16.222 7.37701 16.1343 7.62232 15.9968C7.66561 15.4884 7.89218 15.0131 8.25984 14.6594C6.03484 14.4094 3.70984 13.5468 3.70984 9.72186C3.69579 8.728 4.06253 7.76643 4.73484 7.03436C4.42912 6.17058 4.46489 5.22264 4.83484 4.38436C4.83484 4.38436 5.67231 4.12185 7.58484 5.40936C9.22113 4.95933 10.9486 4.95933 12.5848 5.40936C14.4973 4.10936 15.3348 4.38436 15.3348 4.38436C15.7048 5.22263 15.7406 6.17058 15.4348 7.03436C16.1092 7.76518 16.4762 8.72759 16.4598 9.72186C16.4598 13.5593 14.1223 14.4094 11.8973 14.6594C12.136 14.9012 12.3198 15.1917 12.4363 15.5109C12.5527 15.8301 12.5991 16.1706 12.5723 16.5094C12.5723 17.8469 12.5598 18.9218 12.5598 19.2594C12.5598 19.5219 12.7473 19.8344 13.2473 19.7344C15.496 18.9772 17.4024 17.4456 18.6263 15.4129C19.8501 13.3802 20.3117 10.9787 19.9287 8.63706C19.5457 6.29547 18.343 4.1662 16.5353 2.62934C14.7276 1.09248 12.4326 0.248061 10.0598 0.246826Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0601 5.00012C9.07115 5.00012 8.10445 5.29337 7.28221 5.84277C6.45996 6.39218 5.8191 7.17307 5.44066 8.08671C5.06222 9.00034 4.96321 10.0057 5.15613 10.9756C5.34906 11.9455 5.82526 12.8364 6.52452 13.5357C7.22379 14.2349 8.1147 14.7111 9.08461 14.904C10.0545 15.097 11.0598 14.998 11.9735 14.6195C12.8871 14.2411 13.668 13.6002 14.2174 12.778C14.7668 11.9557 15.0601 10.989 15.0601 10.0001C15.0601 8.67404 14.5333 7.40227 13.5956 6.46459C12.6579 5.52691 11.3861 5.00012 10.0601 5.00012ZM10.0601 13.0001C9.46671 13.0001 8.88669 12.8242 8.39335 12.4945C7.9 12.1649 7.51548 11.6964 7.28842 11.1482C7.06136 10.6 7.00195 9.99679 7.1177 9.41485C7.23346 8.83291 7.51918 8.29836 7.93874 7.8788C8.3583 7.45924 8.89285 7.17352 9.47479 7.05777C10.0567 6.94201 10.6599 7.00142 11.2081 7.22848C11.7563 7.45555 12.2248 7.84006 12.5545 8.33341C12.8841 8.82676 13.0601 9.40678 13.0601 10.0001C13.0601 10.7958 12.744 11.5588 12.1814 12.1214C11.6188 12.6841 10.8557 13.0001 10.0601 13.0001ZM15.0601 4.00012C14.8623 4.00012 14.6689 4.05877 14.5045 4.16865C14.34 4.27853 14.2119 4.43471 14.1362 4.61744C14.0605 4.80016 14.0407 5.00123 14.0793 5.19521C14.1179 5.38919 14.2131 5.56738 14.353 5.70723C14.4928 5.84708 14.671 5.94232 14.865 5.98091C15.0589 6.01949 15.26 5.99969 15.4427 5.924C15.6255 5.84831 15.7816 5.72014 15.8915 5.55569C16.0014 5.39124 16.0601 5.1979 16.0601 5.00012C16.0601 4.73491 15.9547 4.48055 15.7672 4.29302C15.5796 4.10548 15.3253 4.00012 15.0601 4.00012ZM20.0001 6.24012C19.9835 5.38555 19.8212 4.54007 19.5201 3.74012C19.2408 3.01219 18.8117 2.35111 18.2604 1.79982C17.7091 1.24853 17.048 0.819338 16.3201 0.540122C15.5201 0.239021 14.6746 0.0766897 13.8201 0.060122C12.8501 0.000122014 12.5301 0.00012207 10.0601 0.00012207C7.59006 0.00012207 7.27006 0.000122014 6.30006 0.060122C5.44548 0.0766897 4.6 0.239021 3.80006 0.540122C3.07212 0.819338 2.41105 1.24853 1.85976 1.79982C1.30846 2.35111 0.879275 3.01219 0.600059 3.74012C0.298958 4.54007 0.136626 5.38555 0.120059 6.24012C0.0600585 7.22012 0.0600586 7.54012 0.0600586 10.0001C0.0600586 12.4601 0.0600585 12.7801 0.120059 13.7601C0.136626 14.6147 0.298958 15.4602 0.600059 16.2601C0.879275 16.9881 1.30846 17.6491 1.85976 18.2004C2.41105 18.7517 3.07212 19.1809 3.80006 19.4601C4.6 19.7612 5.44548 19.9236 6.30006 19.9401C7.30006 19.9401 7.59006 20.0001 10.0601 20.0001C12.5301 20.0001 12.8501 20.0001 13.8201 19.9401C14.6746 19.9236 15.5201 19.7612 16.3201 19.4601C17.048 19.1809 17.7091 18.7517 18.2604 18.2004C18.8117 17.6491 19.2408 16.9881 19.5201 16.2601C19.8212 15.4602 19.9835 14.6147 20.0001 13.7601C20.0001 12.7601 20.0601 12.4601 20.0601 10.0001C20.0601 7.54012 20.0601 7.22012 20.0001 6.24012ZM18.0001 13.6701C17.9825 14.3047 17.8644 14.9325 17.6501 15.5301C17.4728 16.0025 17.1927 16.4295 16.8301 16.7801C16.4815 17.143 16.0537 17.4202 15.5801 17.5901C14.9811 17.8132 14.3491 17.9349 13.7101 17.9501C12.7701 17.9501 12.4801 18.0001 10.0501 18.0001C7.62006 18.0001 7.34006 18.0001 6.40006 18.0001C5.76208 17.9837 5.13081 17.8655 4.53006 17.6501C4.05772 17.4729 3.63073 17.1928 3.28006 16.8301C2.91721 16.4815 2.63998 16.0537 2.47006 15.5801C2.24786 14.9843 2.12621 14.3558 2.11006 13.7201C2.11006 12.7201 2.11006 12.4701 2.11006 10.0501C2.11006 7.63012 2.11006 7.34012 2.11006 6.38012C2.1273 5.74133 2.2489 5.10966 2.47006 4.51012C2.64262 4.04075 2.91959 3.61674 3.28006 3.27012C3.62863 2.90728 4.05647 2.63004 4.53006 2.46012C5.12905 2.23702 5.76105 2.11535 6.40006 2.10012C7.34006 2.00012 7.63006 2.00012 10.0601 2.00012C12.4901 2.00012 12.7801 2.00012 13.7201 2.00012C14.3622 2.01645 14.9973 2.13807 15.6001 2.36012C16.0694 2.53268 16.4934 2.80965 16.8401 3.17012C17.2029 3.5187 17.4801 3.94653 17.6501 4.42012C17.8949 5.02869 18.0335 5.67471 18.0601 6.33012C18.0601 7.33012 18.1101 7.58012 18.1101 10.0001C18.1101 12.4201 18.0601 12.7101 18.0601 13.6701H18.0001Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.4701 0.000139831H1.53006C1.33964 -0.00250479 1.15056 0.0323873 0.973624 0.102824C0.796689 0.17326 0.635362 0.27786 0.498856 0.410652C0.36235 0.543443 0.25334 0.701824 0.178051 0.876749C0.102761 1.05167 0.062667 1.23972 0.0600586 1.43014V18.5701C0.062667 18.7606 0.102761 18.9486 0.178051 19.1235C0.25334 19.2985 0.36235 19.4568 0.498856 19.5896C0.635362 19.7224 0.796689 19.827 0.973624 19.8975C1.15056 19.9679 1.33964 20.0028 1.53006 20.0001H18.4701C18.6605 20.0028 18.8496 19.9679 19.0265 19.8975C19.2034 19.827 19.3648 19.7224 19.5013 19.5896C19.6378 19.4568 19.7468 19.2985 19.8221 19.1235C19.8974 18.9486 19.9375 18.7606 19.9401 18.5701V1.43014C19.9375 1.23972 19.8974 1.05167 19.8221 0.876749C19.7468 0.701824 19.6378 0.543443 19.5013 0.410652C19.3648 0.27786 19.2034 0.17326 19.0265 0.102824C18.8496 0.0323873 18.6605 -0.00250479 18.4701 0.000139831ZM6.09006 16.7401H3.09006V7.74014H6.09006V16.7401ZM4.59006 6.48014C4.17632 6.48014 3.77953 6.31578 3.48697 6.02323C3.19442 5.73067 3.03006 5.33388 3.03006 4.92014C3.03006 4.5064 3.19442 4.10961 3.48697 3.81705C3.77953 3.5245 4.17632 3.36014 4.59006 3.36014C4.80975 3.33522 5.03224 3.35699 5.24293 3.42402C5.45363 3.49105 5.6478 3.60183 5.81272 3.7491C5.97763 3.89637 6.10958 4.07682 6.19993 4.27862C6.29028 4.48043 6.33698 4.69904 6.33698 4.92014C6.33698 5.14124 6.29028 5.35985 6.19993 5.56166C6.10958 5.76346 5.97763 5.94391 5.81272 6.09118C5.6478 6.23845 5.45363 6.34923 5.24293 6.41626C5.03224 6.48329 4.80975 6.50505 4.59006 6.48014ZM16.9101 16.7401H13.9101V11.9101C13.9101 10.7001 13.4801 9.91014 12.3901 9.91014C12.0527 9.91261 11.7242 10.0184 11.4489 10.2133C11.1735 10.4082 10.9645 10.6828 10.8501 11.0001C10.7718 11.2352 10.7379 11.4827 10.7501 11.7301V16.7301H7.75006C7.75006 16.7301 7.75006 8.55014 7.75006 7.73014H10.7501V9.00014C11.0226 8.52725 11.419 8.13766 11.8965 7.87334C12.374 7.60902 12.9146 7.47999 13.4601 7.50014C15.4601 7.50014 16.9101 8.79014 16.9101 11.5601V16.7401Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="min-w-[200px] bg-white shadow-lg rounded-[24px] md:w-[324px] md:h-[380px]" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="">
+                            <img class="m-auto bg-opacity-20 bg-[#855FCE] mt-12 w-[148px] h-[148px] rounded-full" src="img/ripat.jpg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center items-center py-4">
+                            <div class="flex justify-center items-center flex-col">
+                                <h3 class="font-bold text-xl md:w-36 text-center">Fachrifat Zhafran Triyadi</h3>
+                                <h4 class="text-[#6C87AE] text-[15px]">WEB DEVELOPER</h4>
+                            </div>
+                            <div class="m-5 flex gap-2 px-5 py-2 rounded-[24px] bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-transparent">
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0598 0.246826C7.68532 0.246925 5.3883 1.09194 3.57981 2.63067C1.77131 4.16941 0.569343 6.30145 0.188975 8.64531C-0.191393 10.9892 0.27466 13.3919 1.50374 15.4236C2.73282 17.4553 4.64473 18.9833 6.89736 19.7343C7.39736 19.8218 7.58486 19.5218 7.58486 19.2593C7.58486 19.0218 7.57235 18.2343 7.57235 17.3968C5.05984 17.8593 4.40984 16.7844 4.20984 16.2219C3.98792 15.6748 3.63612 15.19 3.18484 14.8093C2.83484 14.6218 2.33484 14.1593 3.17233 14.1468C3.49212 14.1815 3.79883 14.2928 4.06647 14.4712C4.33412 14.6497 4.55481 14.89 4.70984 15.1718C4.84661 15.4175 5.03052 15.6338 5.25103 15.8083C5.47154 15.9828 5.72432 16.1121 5.99487 16.1887C6.26543 16.2654 6.54845 16.2879 6.82772 16.2549C7.10699 16.222 7.37701 16.1343 7.62232 15.9968C7.66561 15.4884 7.89218 15.0131 8.25984 14.6594C6.03484 14.4094 3.70984 13.5468 3.70984 9.72186C3.69579 8.728 4.06253 7.76643 4.73484 7.03436C4.42912 6.17058 4.46489 5.22264 4.83484 4.38436C4.83484 4.38436 5.67231 4.12185 7.58484 5.40936C9.22113 4.95933 10.9486 4.95933 12.5848 5.40936C14.4973 4.10936 15.3348 4.38436 15.3348 4.38436C15.7048 5.22263 15.7406 6.17058 15.4348 7.03436C16.1092 7.76518 16.4762 8.72759 16.4598 9.72186C16.4598 13.5593 14.1223 14.4094 11.8973 14.6594C12.136 14.9012 12.3198 15.1917 12.4363 15.5109C12.5527 15.8301 12.5991 16.1706 12.5723 16.5094C12.5723 17.8469 12.5598 18.9218 12.5598 19.2594C12.5598 19.5219 12.7473 19.8344 13.2473 19.7344C15.496 18.9772 17.4024 17.4456 18.6263 15.4129C19.8501 13.3802 20.3117 10.9787 19.9287 8.63706C19.5457 6.29547 18.343 4.1662 16.5353 2.62934C14.7276 1.09248 12.4326 0.248061 10.0598 0.246826Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0601 5.00012C9.07115 5.00012 8.10445 5.29337 7.28221 5.84277C6.45996 6.39218 5.8191 7.17307 5.44066 8.08671C5.06222 9.00034 4.96321 10.0057 5.15613 10.9756C5.34906 11.9455 5.82526 12.8364 6.52452 13.5357C7.22379 14.2349 8.1147 14.7111 9.08461 14.904C10.0545 15.097 11.0598 14.998 11.9735 14.6195C12.8871 14.2411 13.668 13.6002 14.2174 12.778C14.7668 11.9557 15.0601 10.989 15.0601 10.0001C15.0601 8.67404 14.5333 7.40227 13.5956 6.46459C12.6579 5.52691 11.3861 5.00012 10.0601 5.00012ZM10.0601 13.0001C9.46671 13.0001 8.88669 12.8242 8.39335 12.4945C7.9 12.1649 7.51548 11.6964 7.28842 11.1482C7.06136 10.6 7.00195 9.99679 7.1177 9.41485C7.23346 8.83291 7.51918 8.29836 7.93874 7.8788C8.3583 7.45924 8.89285 7.17352 9.47479 7.05777C10.0567 6.94201 10.6599 7.00142 11.2081 7.22848C11.7563 7.45555 12.2248 7.84006 12.5545 8.33341C12.8841 8.82676 13.0601 9.40678 13.0601 10.0001C13.0601 10.7958 12.744 11.5588 12.1814 12.1214C11.6188 12.6841 10.8557 13.0001 10.0601 13.0001ZM15.0601 4.00012C14.8623 4.00012 14.6689 4.05877 14.5045 4.16865C14.34 4.27853 14.2119 4.43471 14.1362 4.61744C14.0605 4.80016 14.0407 5.00123 14.0793 5.19521C14.1179 5.38919 14.2131 5.56738 14.353 5.70723C14.4928 5.84708 14.671 5.94232 14.865 5.98091C15.0589 6.01949 15.26 5.99969 15.4427 5.924C15.6255 5.84831 15.7816 5.72014 15.8915 5.55569C16.0014 5.39124 16.0601 5.1979 16.0601 5.00012C16.0601 4.73491 15.9547 4.48055 15.7672 4.29302C15.5796 4.10548 15.3253 4.00012 15.0601 4.00012ZM20.0001 6.24012C19.9835 5.38555 19.8212 4.54007 19.5201 3.74012C19.2408 3.01219 18.8117 2.35111 18.2604 1.79982C17.7091 1.24853 17.048 0.819338 16.3201 0.540122C15.5201 0.239021 14.6746 0.0766897 13.8201 0.060122C12.8501 0.000122014 12.5301 0.00012207 10.0601 0.00012207C7.59006 0.00012207 7.27006 0.000122014 6.30006 0.060122C5.44548 0.0766897 4.6 0.239021 3.80006 0.540122C3.07212 0.819338 2.41105 1.24853 1.85976 1.79982C1.30846 2.35111 0.879275 3.01219 0.600059 3.74012C0.298958 4.54007 0.136626 5.38555 0.120059 6.24012C0.0600585 7.22012 0.0600586 7.54012 0.0600586 10.0001C0.0600586 12.4601 0.0600585 12.7801 0.120059 13.7601C0.136626 14.6147 0.298958 15.4602 0.600059 16.2601C0.879275 16.9881 1.30846 17.6491 1.85976 18.2004C2.41105 18.7517 3.07212 19.1809 3.80006 19.4601C4.6 19.7612 5.44548 19.9236 6.30006 19.9401C7.30006 19.9401 7.59006 20.0001 10.0601 20.0001C12.5301 20.0001 12.8501 20.0001 13.8201 19.9401C14.6746 19.9236 15.5201 19.7612 16.3201 19.4601C17.048 19.1809 17.7091 18.7517 18.2604 18.2004C18.8117 17.6491 19.2408 16.9881 19.5201 16.2601C19.8212 15.4602 19.9835 14.6147 20.0001 13.7601C20.0001 12.7601 20.0601 12.4601 20.0601 10.0001C20.0601 7.54012 20.0601 7.22012 20.0001 6.24012ZM18.0001 13.6701C17.9825 14.3047 17.8644 14.9325 17.6501 15.5301C17.4728 16.0025 17.1927 16.4295 16.8301 16.7801C16.4815 17.143 16.0537 17.4202 15.5801 17.5901C14.9811 17.8132 14.3491 17.9349 13.7101 17.9501C12.7701 17.9501 12.4801 18.0001 10.0501 18.0001C7.62006 18.0001 7.34006 18.0001 6.40006 18.0001C5.76208 17.9837 5.13081 17.8655 4.53006 17.6501C4.05772 17.4729 3.63073 17.1928 3.28006 16.8301C2.91721 16.4815 2.63998 16.0537 2.47006 15.5801C2.24786 14.9843 2.12621 14.3558 2.11006 13.7201C2.11006 12.7201 2.11006 12.4701 2.11006 10.0501C2.11006 7.63012 2.11006 7.34012 2.11006 6.38012C2.1273 5.74133 2.2489 5.10966 2.47006 4.51012C2.64262 4.04075 2.91959 3.61674 3.28006 3.27012C3.62863 2.90728 4.05647 2.63004 4.53006 2.46012C5.12905 2.23702 5.76105 2.11535 6.40006 2.10012C7.34006 2.00012 7.63006 2.00012 10.0601 2.00012C12.4901 2.00012 12.7801 2.00012 13.7201 2.00012C14.3622 2.01645 14.9973 2.13807 15.6001 2.36012C16.0694 2.53268 16.4934 2.80965 16.8401 3.17012C17.2029 3.5187 17.4801 3.94653 17.6501 4.42012C17.8949 5.02869 18.0335 5.67471 18.0601 6.33012C18.0601 7.33012 18.1101 7.58012 18.1101 10.0001C18.1101 12.4201 18.0601 12.7101 18.0601 13.6701H18.0001Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class=""
+                                    ><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.4701 0.000139831H1.53006C1.33964 -0.00250479 1.15056 0.0323873 0.973624 0.102824C0.796689 0.17326 0.635362 0.27786 0.498856 0.410652C0.36235 0.543443 0.25334 0.701824 0.178051 0.876749C0.102761 1.05167 0.062667 1.23972 0.0600586 1.43014V18.5701C0.062667 18.7606 0.102761 18.9486 0.178051 19.1235C0.25334 19.2985 0.36235 19.4568 0.498856 19.5896C0.635362 19.7224 0.796689 19.827 0.973624 19.8975C1.15056 19.9679 1.33964 20.0028 1.53006 20.0001H18.4701C18.6605 20.0028 18.8496 19.9679 19.0265 19.8975C19.2034 19.827 19.3648 19.7224 19.5013 19.5896C19.6378 19.4568 19.7468 19.2985 19.8221 19.1235C19.8974 18.9486 19.9375 18.7606 19.9401 18.5701V1.43014C19.9375 1.23972 19.8974 1.05167 19.8221 0.876749C19.7468 0.701824 19.6378 0.543443 19.5013 0.410652C19.3648 0.27786 19.2034 0.17326 19.0265 0.102824C18.8496 0.0323873 18.6605 -0.00250479 18.4701 0.000139831ZM6.09006 16.7401H3.09006V7.74014H6.09006V16.7401ZM4.59006 6.48014C4.17632 6.48014 3.77953 6.31578 3.48697 6.02323C3.19442 5.73067 3.03006 5.33388 3.03006 4.92014C3.03006 4.5064 3.19442 4.10961 3.48697 3.81705C3.77953 3.5245 4.17632 3.36014 4.59006 3.36014C4.80975 3.33522 5.03224 3.35699 5.24293 3.42402C5.45363 3.49105 5.6478 3.60183 5.81272 3.7491C5.97763 3.89637 6.10958 4.07682 6.19993 4.27862C6.29028 4.48043 6.33698 4.69904 6.33698 4.92014C6.33698 5.14124 6.29028 5.35985 6.19993 5.56166C6.10958 5.76346 5.97763 5.94391 5.81272 6.09118C5.6478 6.23845 5.45363 6.34923 5.24293 6.41626C5.03224 6.48329 4.80975 6.50505 4.59006 6.48014ZM16.9101 16.7401H13.9101V11.9101C13.9101 10.7001 13.4801 9.91014 12.3901 9.91014C12.0527 9.91261 11.7242 10.0184 11.4489 10.2133C11.1735 10.4082 10.9645 10.6828 10.8501 11.0001C10.7718 11.2352 10.7379 11.4827 10.7501 11.7301V16.7301H7.75006C7.75006 16.7301 7.75006 8.55014 7.75006 7.73014H10.7501V9.00014C11.0226 8.52725 11.419 8.13766 11.8965 7.87334C12.374 7.60902 12.9146 7.47999 13.4601 7.50014C15.4601 7.50014 16.9101 8.79014 16.9101 11.5601V16.7401Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------- OUR TEAM SELESAI -------------------------------------->
+
+        <!-------------------- FOOTER ------------------------------>
+        <footer>
+            <div class="px-11 my-20 md:px-36">
+                <div class="w-[160px] h-[46px] flex items-center justify-center">
+                    <img src="./img/logo.svg" alt="Logo">
+                </div>
+                <p class="w-[344px] py-8 md:w-[500px] lg:text-2xl">
+                    Jl. Balai Pustaka Baru I No.2, RT.2/RW.7, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus
+                    Ibukota Jakarta 13220
+                </p>
+                <div class="flex flex-col gap-7 items-start md:flex-row md:gap-7 md:justify-between lg:px-5 lg:text-2xl">
+                    <!-- Section 1 -->
+                        <div class="relative flex flex-col items-start after:content-[''] after:absolute after:left-0 after:bottom-[-1rem] after:w-full after:h-0.5 after:bg-[#1D4ED8] md:after:h-full md:after:w-0.5 md:after:bottom-0 md:after:left-[-1rem]">
+                            <h1 class="text-center font-extrabold py-2">
+                                LAMAN SITUS
+                            </h1>
+                            <a href="#Beranda" class="block py-1">Home</a>
+                            <a href="#" class="block py-1">Edukasi</a>
+                            <a href="#ourteam" class="block py-1">Our Team</a>
+                        </div>
+                    
+                    <!-- Section 2 -->
+                    <div class="relative flex flex-col items-start whitespace-nowrap md:items-start after:content-[''] after:absolute after:left-0 after:bottom-[-1rem] after:w-full after:h-0.5 after:bg-[#1D4ED8] md:after:h-full md:after:w-0.5 md:after:bottom-0 md:after:left-[-1rem]">
+                        <h1 class="text-center font-extrabold py-2">
+                            SUMBER DATA
+                        </h1>
+                        <a href="http://Halodoc.com" target="_blank" class="mt-2 block">Halodoc</a>
+                        <a href="http://Kumparan.com" target="_blank" class="block">Kumparan</a>
+                    </div>
+                    
+                    <!-- Section 3 -->
+                    <div class="relative flex flex-col items-start whitespace-nowrap">
+                        <h1 class="text-center font-extrabold py-2 after:content-[''] after:absolute after:left-0 after:bottom-[-1rem] after:w-full after:h-0.5 after:bg-[#1D4ED8] md:after:h-full md:after:w-0.5 md:after:bottom-0 md:after:left-[-1rem]">CREDIT</h1>
+                        <a href="#" class="block py-1">Freepik</a>
+                        <a href="#" class="block py-1">Shutterstock</a>
+                        <a href="#" class="block py-1">aset.kompas</a>
+                    </div>
+                </div>
+                
+                <div class="py-11">
+                    <h3 class="font-extrabold uppercase md:text-2xl">Responden</h3>
+                    <h4 class="text-[15px] md:text-2xl my-2">Kami mengharapkan masukan Anda</h4>
+                    <form action="" class="py-3 text-white px-8 bg-[#BAC4F9] rounded-lg">
+                        <label for="email" class="block mb-2">Masukan Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 bg-white text-black rounded focus:outline-none" placeholder="Your email address">
+                        <form action="" class="my-2 py-10 px-8 bg-[#BAC4F9]">
+                            <h4 class="py-4 text-white">Tuliskan Masukan Untuk Web Ini</h4>
+                            <textarea class="w-full p-4 bg-white text-black rounded focus:outline-none" rows="5" placeholder="Your feedback"></textarea>
+                            <div class="flex justify-end mt-4 py-2">
+                                <button type="submit" class="bg-gradient-to-br from-[#3A8EF6] to-[#6F3AFA] text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">
+                                    Kirim
+                                </button>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+                <div class="flex justify-center items-center gap-4 md:w-full">
+                    <a href="">
+                        <img class="md:w-[50px] md:h-[68.14px] hover:opacity-25" src="./img/footer.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="md:w-[50px] md:h-[68.14px] hover:opacity-25"src="./img/footer-mail.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="flex w-full justify-center items-center px-11 py-4 bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-white">
+                <h3 class="text-sm md:text-xl text-[#CECECE]">Copyright © 2024 </h3>
+            </div>
+        </footer>
+        <!-------------------- FOOTER SELESAI ------------------------------>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
