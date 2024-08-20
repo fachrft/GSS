@@ -10,7 +10,7 @@
     </head>
     <body class="bg-[#F3F3FD]">
         <!------------------------ NAVBAR  ------------------------------->
-        <nav class="bg-transparent overflow-hidden w-full z-10 fixed">
+        <nav class="bg-transparent overflow-hidden w-full z-20 fixed h-[250px]">
             <div class="flex justify-between relative px-5 lg:px-32">
                 <div class="flex justify-center items-center py-2">
                     <img class="w-[100px] lg:w-[120px]" src="img/logo.svg" alt="" />
@@ -23,16 +23,16 @@
                 <div class="page-hamburger absolute bg-white w-[200px] rounded-xl transition-all duration-700 lg:static lg:w-auto lg:h-20 lg:flex lg:bg-transparent z-50" id="page-hamburger">
                     <div class="p-8">
                         <div class="flex flex-col lg:flex-row lg:gap-5 lg:justify-center lg:items-center">
-                            <div class="flex flex-col gap-2 lg:flex-row lg:gap-8 lg:justify-center lg:items-center font-semibold lg:text-xl">
-                                <a href="" class="relative group">
+                            <div class="flex flex-col gap-2 lg:flex-row lg:gap-8 lg:justify-center lg:items-center font-semibold lg:text-xl z-50">
+                                <a href="#" class="relative group">
                                     Home
                                     <span class="absolute left-0 bottom-0 w-[50%] lg:w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
                                 </a>
-                                <a href="" class="relative group">
+                                <a href="#edukasi" class="relative group">
                                     Edukasi
                                     <span class="absolute left-0 bottom-0 w-[50%] lg:w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
                                 </a>
-                                <a href="" class="relative group">
+                                <a href="#our-team" class="relative group">
                                     Our Team
                                     <span class="absolute left-0 bottom-0 w-[50%] lg:w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
                                 </a>
@@ -78,7 +78,7 @@
         <!-------------------------- HOME SELESAI ---------------------------------->
 
         <!------------------------ 5 PILAR KESEHATAN  ------------------------------->
-        <section class="mb-28 overflow-hidden">
+        <section class="mb-28 overflow-hidden" id="edukasi">
             <div class="text-center font-semibold text-2xl hidden lg:block">
                 <h1>FOKUS 5 PILAR KESEHATAN</h1>
             </div>
@@ -409,7 +409,7 @@
         <!------------------------ KEGIATAN SEKOLAH SEHAT SELESAI  ------------------------------->
 
         <!------------------------- OUR TEAM -------------------------------------->
-        <section class="overflow-hidden">
+        <section class="overflow-hidden" id="our-team">
             <h1 class="font-bold text-center text-[20px] lg:text-3xl">Our Team</h1>
             <!-- Card 1 -->
             <div class="w-full overflow-x-auto no-scrollbar">
@@ -573,7 +573,7 @@
 
         <!-------------------- FOOTER ------------------------------>
         <footer class="overflow-hidden">
-            <div class="px-11 my-20 md:px-36">
+            <div class="px-8 my-20 md:px-36">
                 <div class="w-[160px] h-[46px] flex items-center justify-center">
                     <img src="./img/logo.svg" alt="Logo">
                 </div>
@@ -587,9 +587,9 @@
                             <h1 class="text-center font-extrabold py-2">
                                 LAMAN SITUS
                             </h1>
-                            <a href="#Beranda" class="block py-1">Home</a>
-                            <a href="#" class="block py-1">Edukasi</a>
-                            <a href="#ourteam" class="block py-1">Our Team</a>
+                            <a href="#" class="block py-1">Home</a>
+                            <a href="#edukasi" class="block py-1">Edukasi</a>
+                            <a href="#our-team" class="block py-1">Our Team</a>
                         </div>
                     
                     <!-- Section 2 -->
@@ -629,15 +629,15 @@
                 </div>
                 <div class="flex justify-center items-center gap-4 md:w-full">
                     <a href="">
-                        <img class="md:w-[50px] md:h-[68.14px] hover:opacity-25" src="./img/footer.svg" alt="">
+                        <img class="w-[50px] h-[68.14px] hover:opacity-25" src="./img/footer.svg" alt="">
                     </a>
                     <a href="">
-                        <img class="md:w-[50px] md:h-[68.14px] hover:opacity-25"src="./img/footer-mail.svg" alt="">
+                        <img class="w-[50px] h-[68.14px] hover:opacity-25"src="./img/footer-mail.svg" alt="">
                     </a>
                 </div>
             </div>
-            <div class="flex w-full justify-center items-center px-11 py-4 bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-white">
-                <h3 class="text-sm md:text-xl text-[#CECECE]">Copyright © 2024 </h3>
+            <div class="flex w-full justify-center items-center px-11 py-8 bg-gradient-to-tr from-[#3A8EF6] to-[#6F3AFA] text-white">
+                <h3 class="text-xl text-[#CECECE]">Copyright © 2024 </h3>
             </div>
         </footer>
         <!-------------------- FOOTER SELESAI ------------------------------>
